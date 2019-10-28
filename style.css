@@ -1,0 +1,24 @@
+:root {
+    --wrapper-width: 500px;
+    --main-blue: blue;
+    --main-red: red;
+    --width-difference: 50px;
+}
+
+.wrapper {
+    width: var(--wrapper-width);
+    height: var(--wrapper-width);
+    background-color: var(--main-blue);
+}
+
+.wrapper__inner:hover {
+    --main-red: #000;
+}
+
+.wrapper__inner {
+    width: calc(var(--wrapper-width) - var(--width-difference));
+    height: calc(var(--wrapper-width) - var(--width-difference));
+    margin: calc(var(--width-difference)) / 2;
+    background-color: var(--main-red);
+    display: inline-block;
+}
